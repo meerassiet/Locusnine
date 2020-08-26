@@ -1,0 +1,202 @@
+<div class="container">
+    <h4>
+        <div style="float:left;"> <img src="assets/logo.png" style="size: 130px;"> </div>
+        <div style="float:right;color:#231F20;font-family:Roboto;font-size: 48px;font-weight: lighter;padding-top: 40px;">
+            SALES DASHBOARD</div>
+        <div style=" clear: left; "></div>
+    </h4>
+    <mat-tab-group style="background-color: white;margin-bottom: 20px; margin-top: 50px;">
+        <mat-tab label="TODAY "> </mat-tab>
+        <mat-tab label="LAST WEEK "> </mat-tab>
+        <mat-tab label="LAST MONTH "> </mat-tab>
+        <mat-tab label="THIS QUARTER "> </mat-tab>
+        <mat-tab label="THIS YEAR "> </mat-tab>
+    </mat-tab-group>
+    <div>
+        <div class="allReps">
+            <span class="allRepsText">All Sales Reps </span>&nbsp; &nbsp;
+            <img src="assets/ico-down-arrow.png ">
+        </div>
+        <div style="display:block;float:right;width: 21%;">
+            <mat-tab-group mat-stretch-tabs style="background-color: white;">
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <span (click)="sortDiv()">TOP</span>
+                    </ng-template>
+                </mat-tab>
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <span (click)="sortDivReverse()">BOTTOM</span>
+                    </ng-template>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+
+    <div>
+        <div class="container2" style="float:left;padding-top: 40px;width:50%;position: relative;text-align:center;">
+            <img src="assets/funnel.png" style="width:97%;">
+            <div class="top-left">
+                <div class="funnelText1">Lead In</div><br>
+                <div class="funnelText2">25</div>
+                <div class="funnelText1">Contact Made</div><br>
+                <div class="funnelText2">18</div>
+                <div class="funnelText1">Needs Defined</div><br>
+                <div class="funnelText2">12</div>
+                <div class="funnelText1">Proposal Made</div><br>
+                <div class="funnelText2">8</div>
+                <div class="funnelText1">Negotiations Started</div><br>
+                <div class="funnelText2">5</div>
+                <div style="padding: 10px;"></div>
+                <div class="funnelTextL">WON</div><br>
+                <div class="funnelText2">3</div>
+            </div>
+        </div>
+    </div>&nbsp;
+    <div style="float:right;width:50%;padding-top: 40px;">
+        <div id="list1" style="float:left;width: 42%;margin-left: 10%;">
+            <div id="l1">
+                <mat-card class="example-card">
+                    <img src="assets/ico-calls.png">
+                    <h3 style="text-align: right;">
+                        <div class="line1">CALLS</div>
+                        <div class="line2">10/15</div>
+                    </h3>
+                </mat-card>
+            </div>
+            <div id="l2">
+                <mat-card class="example-card">
+                    <img src="assets/ico-wins.png">
+                    <h3 style="text-align: right;">
+                        <div class="line1">WINS</div>
+                        <div class="line2">1/3</div>
+                    </h3>
+                </mat-card>
+            </div>
+            <div id="l3">
+                <mat-card class="example-card">
+                    <img src="assets/ico-revenue.png">
+                    <h3 style="text-align: right;">
+                        <span class="line1">INCREMENTED<br>REVENUE</span>
+                        <div class="line2">80k/100k</div>
+                    </h3>
+                </mat-card>
+            </div>
+        </div>
+        <div id="list2" style="float:right;width:42%;">
+            <div id="r1">
+                <mat-card class="example-card" style="background-color: rgb(25, 118, 211);">
+                    <div class="nameL">John Doe</div>
+                    <div style=" padding-bottom:15px;">
+                        <span class="sideL">New MRR</span>
+                        <span class="sideR">5230</span>
+                    </div>
+                    <div style=" padding-bottom:15px;">
+                        <span class="sideL">New Logos</span>
+                        <span class="sideR">102</span>
+                    </div>
+                    <div style=" padding-bottom:15px;">
+                        <span class="sideL">Demo Calls</span>
+                        <span class="sideR">30</span>
+                    </div>
+                </mat-card>
+            </div>
+            <div id="r2">
+                <mat-card class="example-card" style="background-color: rgb(44, 156, 244);">
+                    <div class="nameL">Jane Smith</div>
+                    <div style=" padding-bottom:15px;">
+                        <span class="sideL">New MRR</span>
+                        <span class="sideR">5230</span>
+                    </div>
+                    <div style=" padding-bottom:15px;">
+                        <span class="sideL">New Logos</span>
+                        <span class="sideR">102</span>
+                    </div>
+                    <div style=" padding-bottom:15px;">
+                        <span class="sideL">Demo Calls</span>
+                        <span class="sideR">30</span>
+                    </div>
+                </mat-card>
+            </div>
+            <div id="r3">
+                <mat-card class="example-card" style="background-color: rgb(101, 181, 247);">
+                    <div class="nameL">Ethan Hunt</div>
+                    <div style=" padding-bottom:15px;">
+                        <span class="sideL">New MRR</span>
+                        <span class="sideR">5230</span>
+                    </div>
+                    <div style=" padding-bottom:15px;">
+                        <span class="sideL">New Logos</span>
+                        <span class="sideR">102</span>
+                    </div>
+                    <div style=" padding-bottom:15px;">
+                        <span class="sideL">Demo Calls</span>
+                        <span class="sideR">30</span>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+    <div style="font-size: 24px;font-family: Roboto;font-weight: normal;color: #231f20;">Details</div>
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+        <ng-container matColumnDef="SalesRep">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Sales Rep</th>
+            <td mat-cell *matCellDef="let element"> {{element.SalesRep}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="Date">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.Date}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="Client">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Client </th>
+            <td mat-cell *matCellDef="let element"> {{element.Client}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="PrimaryContactPerson">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Primary Contact Person </th>
+            <td mat-cell *matCellDef="let element"> {{element.PrimaryContactPerson}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="Title">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+            <td mat-cell *matCellDef="let element"> {{element.Title}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="Vertical">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Vertical </th>
+            <td mat-cell *matCellDef="let element"> {{element.Vertical}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="MeetingLocation">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Meeting Location </th>
+            <td mat-cell *matCellDef="let element"> {{element.MeetingLocation}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="PurposeOfInteraction">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Purpose Of Interaction </th>
+            <td mat-cell *matCellDef="let element"> {{element.PurposeOfInteraction}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="OutcomeAndRemarks">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Outcome And Remarks </th>
+            <td mat-cell *matCellDef="let element"> {{element.OutcomeAndRemarks}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="EngagementStatus">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Engagement Status </th>
+            <td mat-cell *matCellDef="let element"> {{element.EngagementStatus}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{
+            'make-won': row.EngagementStatus === 'Won',
+            'make-lost': row.EngagementStatus === 'Lost',
+            'make-decide': row.EngagementStatus === 'Needs defined',
+            'make-negotiations': row.EngagementStatus === 'Negotiations started'
+        }">
+        </tr>
+    </table>
+</div>
